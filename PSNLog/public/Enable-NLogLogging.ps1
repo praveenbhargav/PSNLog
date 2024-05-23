@@ -80,7 +80,7 @@ function Enable-NLogLogging {
         }
 
         if (-Not($DontRedirectMessages.IsPresent)) {
-            Set-MessageStreams -WriteVerbose -WriteWarning -WriteError
+            Set-MessageStreams -WriteVerbose -WriteWarning -WriteError -WriteHost
         }
     }
 }
